@@ -1,0 +1,31 @@
+<mvc:View controllerName="cal.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m"
+    xmlns:form="sap.ui.layout.form">
+    <Page id="page" title="{i18n>title}">
+        <content>
+            <form:SimpleForm editable="true"
+			layout="ResponsiveGridLayout" title="calculator">
+
+                <Label text="number 1 "></Label>
+                <Input type="Number" width="200px" id="num1"></Input>
+
+                
+                <Label text="number 2 "></Label>
+                <Input type="Number" width="200px" id="num2"></Input>
+                
+                <Button text="Sum" id="sum" press="onSum"></Button>
+                <Button text="Sub" id="sub" press="onSub"></Button>
+                <Button text="Mul" id="mul" press="onMul"></Button>
+                <Button text="Div" id="div" press="onDiv"></Button>
+
+                <Label text="Ans " id="ans"></Label>
+                <Input type="Number" id="ans_inp"></Input>
+
+                <Button type="Reject" text="Clear" id="clear" press="onClear"></Button>
+            </form:SimpleForm>
+
+            
+        </content>
+    </Page>
+</mvc:View>
